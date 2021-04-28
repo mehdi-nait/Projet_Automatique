@@ -27,3 +27,7 @@ void loop() {
   digitalWrite(IN_2,LOW);
   delay(2000);
 }
+
+
+//faire une masse globale
+//éviter la sortie 9
