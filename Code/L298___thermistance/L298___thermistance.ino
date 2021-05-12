@@ -1,5 +1,5 @@
 //Pin thermistance
-int analog_pin = 5;
+int pin_therm = 5;
 
 //Variable thermistance
 int val;
@@ -15,7 +15,7 @@ void setup() {
   // put your setup code here, to run once:
 
 //  Configuration du port de la thermistance en "entrée"
-  pinMode(analog_pin,INPUT);
+  pinMode(pin_therm,INPUT);
   
 //  Configuration des ports de la résistance chauffante en "sortie"
   pinMode(IN_1,OUTPUT);
@@ -34,7 +34,7 @@ void loop() {
   digitalWrite(IN_2,LOW);
 
 //Calcul de la température avec la thermistance
-  val = analogRead(analogPin);  // read the input pin
+  val = analogRead(pin_therm);  // read the input pin
   tension = (val*3.3)/676;
 
 //3,8997x3 - 17,089x2 + 49,686x - 43,095

@@ -15,14 +15,14 @@ void loop() {
   tension = (val*3.3)/676;
   //1,1211x3 - 7,4439x2 + x - 43,095
   temp = 3.8997*pow(tension,3) - 17.089*pow(tension,2)+ 49.686*tension - 43.095;
-  //Serial.println(val);
-/*  Serial.print(" Lecture : ");
-  Serial.println(val);
 
-  Serial.print(" Tension : ");
-  Serial.println(tension);*/
+//  Serial.print(" Lecture : ");
+//  Serial.println(val);
+//
+//  Serial.print(" Tension : ");
+//  Serial.println(tension);
 
   Serial.print(" Temperature : ");
   Serial.println(temp);
-  delay(10000);
+  delay(2000);
 }
