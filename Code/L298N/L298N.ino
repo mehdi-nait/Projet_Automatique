@@ -1,9 +1,8 @@
 int analog_pin = 5;
 
-//controle L298N
+//controles L298N
 int IN_1 = 13;  
 int IN_2 = 12;
-
 int EN_A = 10;
 
 void setup() {
@@ -18,8 +17,6 @@ void setup() {
 
 
   Serial.begin(9600);
-
-  
 }
 
 void loop() {
